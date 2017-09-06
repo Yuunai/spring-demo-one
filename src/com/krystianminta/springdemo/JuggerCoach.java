@@ -1,16 +1,16 @@
 package com.krystianminta.springdemo;
 
-public class TrackCoach implements Coach {
+public class JuggerCoach implements Coach {
 
 	private FortuneService fortuneService;
 	
-	public TrackCoach(FortuneService fortuneService) {
+	public JuggerCoach(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
 	
 	@Override
 	public String getDailyWorkout() {
-		return "Run a hard 5k";
+		return "Swing a sword for 300 times!";
 	}
 
 	@Override
