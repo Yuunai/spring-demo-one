@@ -1,21 +1,26 @@
 package com.krystianminta.springdemo;
 
-public class BaseballCoach implements Coach{
+public class CricketCoach implements Coach {
 
 	private FortuneService fortuneService;
 	
-	
-	public BaseballCoach(FortuneService fortuneService) {
+	public void setFortuneService(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
+
+	public CricketCoach() {
+		
+	}
+	
 	
 	@Override
 	public String getDailyWorkout() {
-		return "Spend 30 minut on batting practice";
+		return "Practice fast bowling for 15 minutes";
 	}
 
 	@Override
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
+
 }
