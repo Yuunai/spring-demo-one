@@ -2,6 +2,8 @@ package com.krystianminta.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.krystianminta.springdemo.interfaces.Coach;
+
 public class BeanScopeDemoApp {
 
 	public static void main(String[] args) {

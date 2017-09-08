@@ -1,4 +1,6 @@
-package com.krystianminta.springdemo;
+package com.krystianminta.springdemo.impls;
+
+import com.krystianminta.springdemo.interfaces.FortuneService;
 
 public class HappyFortuneService implements FortuneService{
 

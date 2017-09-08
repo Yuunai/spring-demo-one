@@ -1,4 +1,7 @@
-package com.krystianminta.springdemo;
+package com.krystianminta.springdemo.impls;
+
+import com.krystianminta.springdemo.interfaces.Coach;
+import com.krystianminta.springdemo.interfaces.FortuneService;
 
 public class JuggerCoach implements Coach {
 
@@ -18,4 +21,12 @@ public class JuggerCoach implements Coach {
 		return fortuneService.getFortune();
 	}
 
+	public void initMethod() {
+		System.out.println("Just a littly initializer!");
+	}
+	
+	public void destroyMethod() {
+		System.out.println("Well, bye!");
+	}
+	
 }

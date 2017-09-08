@@ -1,4 +1,7 @@
-package com.krystianminta.springdemo;
+package com.krystianminta.springdemo.impls;
+
+import com.krystianminta.springdemo.interfaces.Coach;
+import com.krystianminta.springdemo.interfaces.FortuneService;
 
 public class TrackCoach implements Coach {
 
@@ -18,4 +21,12 @@ public class TrackCoach implements Coach {
 		return fortuneService.getFortune();
 	}
 
+	public void startupStuff() {
+		System.out.println("TrackCoach: Building a spaceship!");
+	}
+	
+	public void deathWish() {
+		System.out.println("TrackCoach: Death sentence!");
+	}
+	
 }

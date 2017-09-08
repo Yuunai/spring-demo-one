@@ -1,4 +1,4 @@
-package com.krystianminta.springdemo;
+package com.krystianminta.springdemo.interfaces;
 
 public interface Coach {
 

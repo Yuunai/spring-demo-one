@@ -11,11 +11,11 @@
     <!-- Define your beans here -->
     
     <bean id="myFortuneService"
-    	class="com.krystianminta.springdemo.RandomFortuneService">
+    	class="com.krystianminta.springdemo.impls.RandomFortuneService">
     </bean>
     
     <bean id="myCoach"
-    	class="com.krystianminta.springdemo.JuggerCoach"
+    	class="com.krystianminta.springdemo.impls.JuggerCoach"
     	scope="prototype">
     	
     	<constructor-arg ref="myFortuneService" />

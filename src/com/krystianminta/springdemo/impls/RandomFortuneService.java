@@ -1,6 +1,8 @@
-package com.krystianminta.springdemo;
+package com.krystianminta.springdemo.impls;
 
 import java.util.Random;
+
+import com.krystianminta.springdemo.interfaces.FortuneService;
 
 public class RandomFortuneService implements FortuneService {
 
